@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-    <v-app style="background-color: lightslategray;">
+    <v-app style="background-color: #ecfbf0;">
         <v-container>
             <router-view></router-view>
         </v-container>

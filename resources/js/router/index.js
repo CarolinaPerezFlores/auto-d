@@ -12,20 +12,8 @@ const router =  new Router({
 
         {
             path: '/',
-            name: 'auditoriums',
-            component: () => import('../views/auditoriums/index.vue'),
-        },
-        {
-            path: '/booking',
-            name: 'booking',
-            props: true,
-            component: () => import('../views/booking/index.vue'),
-        },
-        {
-            path: '/booking-detail',
-            name: 'booking-detail',
-            props: true,
-            component: () => import('../views/booking/showBooking.vue'),
+            name: 'home',
+            component: () => import('../views/home/index.vue'),
         },
     ]
 });

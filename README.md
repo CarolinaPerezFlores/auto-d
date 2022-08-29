@@ -1,20 +1,25 @@
-## Bamba Developer Test
-## DEMO:
+## Auto-D
+## 
+### CRUD
 
-### Preguntas a responder:
-
-- ¿Que mejoras hubieses implementado si fuese un proyecto "de la vida real"?
-
-
-
-- Si se incluye un cátalogo de películas y cada sala muestra distintas películas ¿qué cambios en el diseño de la base de datos y lógica de negocio tendrías que implementar?
+![image info](./resources/imgs/demo.gif)
 
 
 
-- ¿Cómo evitarias que dos usuarios agenden el mismo asiento en la misma sala para el mismo horario?
+### Stack used:
 
+- Larvel 8
+- MySQL
+- Vue JS 2
+- Vuetify css framework  
+  
 
-
+### Instructions
+- Clon git proyect
+- run composer install
+- run npm install
+- set database
+- run php artisan migrate --seed
 
 
 

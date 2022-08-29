@@ -230,7 +230,7 @@ var render = function () {
           _c(
             "v-toolbar",
             { attrs: { flat: "", color: "primary", dark: "" } },
-            [_c("v-toolbar-title", [_vm._v("Avengers")])],
+            [_c("v-toolbar-title", [_vm._v("Avengerss")])],
             1
           ),
           _vm._v(" "),

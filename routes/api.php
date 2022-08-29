@@ -1,9 +1,6 @@
 <?php
 
-use App\Http\Controllers\API\AuditoriumController;
-use App\Http\Controllers\API\BookerController;
-use App\Http\Controllers\API\BookingController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\API\CarController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,11 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/auditoriums', [AuditoriumController::class, 'index']);
-Route::get('/show-auditorium/{id}', [AuditoriumController::class, 'show']);
-Route::post('/save-booking', [BookingController::class, 'store']);
-Route::get('/show-booking/{token}', [BookingController::class, 'show']);
+Route::get('list-cars', [CarController::class, 'index']);
+Route::post('/save-car', [CarController::class, 'store']);
+Route::delete('/delete-car/{id}', [CarController::class, 'destroy']);
+Route::post('/update-car/id/{id}', [CarController::class, 'updateCar']);
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
